@@ -1,0 +1,48 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="ALUNO"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-04-12 01:40:12 "/>
+        <attribute name="created" value="QUxVTk87RUNFNDM2TUlDUk8zMzsyMDIzLTA0LTEyOyIxMjo0Njo0NSAiOzI0MTY="/>
+        <attribute name="edited" value="QUxVTk87RUNFNDM2TUlDUk8zMzsyMDIzLTA0LTEyOyIwMTo0MDoxMiAiOzE7MjUxMA=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="usuario" type="String" array="False" size=""/>
+            <declare name="senha" type="String" array="False" size=""/>
+            <declare name="loop1" type="Boolean" array="False" size=""/>
+            <declare name="loop2" type="Boolean" array="False" size=""/>
+            <assign variable="loop1" expression="true"/>
+            <do expression="loop1==true">
+                <do expression="loop1==true">
+                    <input variable="usuario"/>
+                    <if expression="usuario==&quot;Kamile&quot;">
+                        <then>
+                            <assign variable="loop1" expression="false"/>
+                        </then>
+                        <else>
+                            <output expression="&quot;Usu&#225;rio incorreto, tente novamente&quot;" newline="True"/>
+                        </else>
+                    </if>
+                </do>
+                <assign variable="loop1" expression="false"/>
+                <assign variable="loop2" expression="true"/>
+                <do expression="loop2==true">
+                    <input variable="senha"/>
+                    <if expression="senha==&quot;kami123&quot;">
+                        <then>
+                            <assign variable="loop2" expression="false"/>
+                        </then>
+                        <else>
+                            <output expression="&quot;Senha incorreta, Tente novamente&quot;" newline="True"/>
+                        </else>
+                    </if>
+                </do>
+            </do>
+            <assign variable="loop2" expression="false"/>
+        </body>
+    </function>
+</flowgorithm>
